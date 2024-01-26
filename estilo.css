@@ -1,0 +1,1103 @@
+@font-face {
+    font-family: "Work_Sans";
+    src: url("/home/alumno/Imágenes/ahahahha/CSSProyecto/ARCHIVOS_PROJ/Work_Sans/static/WorkSans-Regular.ttf");
+}
+
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    .contenedorImgNo img {
+        position: absolute;
+        height: auto;
+        width: 90%;
+        top: 33%;
+        right: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p#texto1No {
+        position: absolute;
+        top: 10%;
+    }
+
+    h1#noTitulo {
+
+        text-align: center;
+    }
+
+    ul#lista {
+        position: absolute;
+        top: 80%;
+
+    }
+
+    ul#lista>li {
+        font-size: small;
+    }
+
+    ul#lista>li>p {
+        overflow-wrap: break-word;
+        font-size: small;
+    }
+
+    #footerNo {
+        position: absolute;
+        top: 161%;
+        left: 21%;
+        text-align: center;
+    }
+
+
+    #texto1No {
+        position: absolute;
+        font-size: small;
+        overflow-wrap: break-word;
+    }
+
+    #texto2No {
+        position: absolute;
+        font-size: small;
+        overflow-wrap: break-word;
+        top: 56%;
+    }
+
+    #texto3No {
+        font-size: small;
+        overflow-wrap: break-word;
+        position: absolute;
+        top: 147%;
+    }
+
+    #que_nos_aporta>h3 {
+        position: absolute;
+        font-size: small;
+        top: 75%;
+        left: 30%;
+    }
+
+    header #noTitulo {
+        font-size: small;
+    }
+
+
+    div.divNav {
+        display: flex;
+        position: absolute;
+        left: 26%;
+        box-sizing: border-box;
+
+    }
+
+    div.divNav a {
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 30px;
+
+        border: none;
+        outline: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+
+
+
+    div.divNav a:hover::before {
+        opacity: 1;
+    }
+
+    div.divNav a.active {
+        background-color: chartreuse;
+    }
+
+
+    /*imagenes */
+
+    /*madrid*/
+
+    #h3Madrid{
+        position: absolute;
+        top: 6%;
+    }
+    #imgMadrid {
+        position: absolute;
+        width: 91%;
+        height: auto;
+        top: 12%;
+    }
+
+    #h3Calpe{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    #imgCalpe{
+        
+        position: absolute;
+        width: 97%;
+        height: auto;
+        top: 47%;
+        left: 3%;
+        
+    }
+    #h3Toledo{
+        position: absolute;
+    top: 73%;
+    left: 5%;
+    }
+    #h3Salamanca{
+        position: absolute;
+        top: 112%;
+    }
+
+    #imgSalamanca {
+        position: absolute;
+        width: 97%;
+        height: auto;
+        top: 119%;  
+    }
+   
+
+    #imgToledo{
+        
+        position: absolute;
+        width: 97%;
+        height: auto;
+        top: 79%;
+        left: 3%;
+        
+    }
+
+    #h3Almeria{
+        position: absolute;
+        top: 151%;
+        height: auto;
+        width: 60%;
+    }
+    #imgAlmeria{
+        position: absolute;
+        top: 160%;
+        height: auto;
+        width: 95%;
+
+    }
+
+    #h3Andorra{
+        position: absolute;
+        top: 182%;
+        width: 60%;
+        height: auto;
+    }
+    #imgAndorra{
+        position: absolute;
+        top: 189%;
+        width: 93%;
+        height: auto;   
+
+    }
+
+    .pagMadrid pre {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        top: 178%;
+        left: 26%;
+    }
+
+    .maleta section{
+        display: flex;
+        margin-top: 15%;
+    }
+
+    .im >section>img{
+        width: 96%;
+        height: auto;
+    }
+
+    .divLinks {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+
+    @keyframes botonsi {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    /* SI */
+
+    a#si {
+
+        
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 24px;
+    top: 302px;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+
+    }
+
+    a#si::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 157, 2, 1) 0%, rgba(255, 0, 0, 1) 34%, rgba(62, 226, 82, 1) 59%, rgba(62, 226, 217, 1) 100%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 20s infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+
+    a#si:hover::before {
+        opacity: 1;
+    }
+
+
+    /* NO */
+
+    a#no {
+
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 50px;
+        left: 88px;
+        top: 304px;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        background: #000000;
+        color: #fff;
+        border-radius: 10px;
+        /*farle forma link*/
+
+    }
+
+    a#no::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 2, 2, 1) 0%, rgb(255, 195, 0) 10%, rgb(255, 78, 0) 17%, rgb(246, 0, 234) 30%, rgba(0, 255, 224, 1) 50%, rgba(62, 163, 226, 1) 59%, rgba(196, 86, 237, 1) 69%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 15s infinite;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+    a#no:hover::before {
+        opacity: 1;
+    }
+    
+    .imgsMadrid img{
+        width: 100%;
+        height: auto;
+    }
+
+    .imgsMadridAparte img{
+        width: 100%;
+        height: auto;
+    }
+
+    .mainMadrid{
+        position: absolute;
+        top: 13%;
+    }
+    
+}
+
+
+* {
+    font-family: "Work_Sans", sans-serif;
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1080px) {
+
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+
+    .oscuro {
+        background-color: black;
+        color: white;
+    }
+
+
+    /* body index */
+    #index {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+
+        background: #FFFFFF;
+    }
+
+    /* imagen */
+    .im section {
+        position: absolute;
+        width: 1200px;
+        height: 768px;
+        left: 548px;
+        top: 156px;
+    }
+
+    /* ¿Te gusta viajar? */
+    #tituloViaje {
+        color: #fff;
+        text-shadow: 0 0 7px #000000,
+            0 0 10px #4e4545,
+            0 0 21px #261f1f,
+            0 0 42px #1a1f1e,
+            0 0 82px #151817,
+            0 0 92px #111313,
+            0 0 102px #090a0a,
+            0 0 151px #020202;
+
+        position: absolute;
+        width: 156px;
+        height: 79px;
+        left: 318px;
+        top: 222px;
+
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /*div links*/
+    .divLinks {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+
+
+    /* SI */
+
+    a#si {
+
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 50px;
+        left: 289px;
+        top: 437px;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        background: #000000;
+        color: #fff;
+        border-radius: 10px;
+        /*farle forma link*/
+
+    }
+
+    a#si::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 157, 2, 1) 0%, rgba(255, 0, 0, 1) 34%, rgba(62, 226, 82, 1) 59%, rgba(62, 226, 217, 1) 100%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 20s infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+
+    a#si:hover::before {
+        opacity: 1;
+    }
+
+
+    /* NO */
+
+    a#no {
+
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 50px;
+        left: 299px;
+        top: 437px;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        background: #000000;
+        color: #fff;
+        border-radius: 10px;
+        /*farle forma link*/
+
+    }
+
+    a#no::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 2, 2, 1) 0%, rgb(255, 195, 0) 10%, rgb(255, 78, 0) 17%, rgb(246, 0, 234) 30%, rgba(0, 255, 224, 1) 50%, rgba(62, 163, 226, 1) 59%, rgba(196, 86, 237, 1) 69%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 15s infinite;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+
+    @keyframes botonsi {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    a#no:hover::before {
+        opacity: 1;
+    }
+
+    /* no.html */
+    #bodyNo {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #FFFFFF;
+    }
+
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px #f10000, 0 0 20px #e74242, 0 0 30px #d5237c, 0 0 40px #3200e6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        100% {
+            text-shadow: 0 0 20px #0049e6, 0 0 30px #4dfff0, 0 0 40px #2ad35a, 0 0 50px #05ee12, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    /*enlace volver*/
+    a#volver {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    /* texto header */
+    h1#noTitulo {
+        position: absolute;
+        width: 117px;
+        height: auto;
+        left: 50%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+
+        max-width: 100%;
+        color: #000000;
+    }
+
+    /* imagen */
+    .contenedorImgNo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedorImgNo img {
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    /* Texto 1*/
+    p#texto1No {
+
+        font-size: 15px;
+    }
+
+    /*Texto 2*/
+    #texto2No {
+        position: absolute;
+        word-break: break-word;
+        left: 0;
+        top: 66%;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: justify;
+        word-wrap: break-word;
+        color: #000000;
+    }
+
+
+    /* ¿Qué nos aporta viajar? */
+    article#que_nos_aporta>h3 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+        color: #000000;
+        max-width: 100%;
+    }
+
+    /*Lista*/
+    ul#lista {
+        position: absolute;
+        width: 1547px;
+        height: 300px;
+        left: 37px;
+        top: 77%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: justify;
+
+        color: #000000;
+
+
+    }
+
+    /*Texto 3*/
+    p#texto3No {
+
+        position: absolute;
+        top: 114%;
+        font-size: 15px;
+        color: #000000;
+        word-break: break-word;
+    }
+
+
+    /* VOLVER */
+    div.divNav {
+        display: flex;
+        position: absolute;
+        left: 44%;
+        box-sizing: border-box;
+
+    }
+
+    div.divNav a {
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 30px;
+
+        border: none;
+        outline: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+
+
+
+    div.divNav a:hover::before {
+        opacity: 1;
+    }
+
+    div.divNav a.active {
+        background-color: chartreuse;
+    }
+
+
+    /*Imágenes de viajes*/
+    #viajesImgs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #footerNo {
+        position: absolute;
+        top: 120%;
+        text-align: center;
+        left: 50%;
+    }
+
+    /*Viajes*/
+
+    #viajes {
+
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+
+        background: #FFFFFF;
+
+    }
+
+
+    #viajesHeader>h1 {
+        position: absolute;
+        width: 43px;
+        height: 18px;
+        left: 953px;
+        top: 10px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+    }
+
+    #viajesNav>div {
+        position: absolute;
+        width: 48px;
+        height: 18px;
+        left: 953px;
+        top: 52px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+    }
+
+
+    /* Contacto */
+    address#noAddress {
+
+        position: absolute;
+        width: 194px;
+        height: 51px;
+        left: 863px;
+        top: 1008px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: justify;
+
+        color: #000000;
+    }
+
+
+    /* img 1 */
+    #imgMadrid {
+        left: 149px;
+        top: 162px;
+
+        transition: all 0.1s;
+    }
+
+    #imgMadrid:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    /*sitios de viaje*/
+
+    /*madrid calpe toledo salamanca almeria andorra */
+
+    /*Títulos*/
+    #h3Madrid {
+
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 396px;
+        top: 121px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    #h3Calpe {
+
+
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 955px;
+        top: 121px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    #h3Toledo {
+
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 1492px;
+        top: 121px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    #h3Salamanca {
+
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 396px;
+        top: 536px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    #h3Almeria {
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 955px;
+        top: 536px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    #h3Andorra {
+
+
+        position: absolute;
+        width: 31px;
+        height: 18px;
+        left: 1492px;
+        top: 536px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+
+
+    }
+
+    /*Imágenes de los viajes*/
+    #imgMadrid {
+        position: absolute;
+        width: 526px;
+        height: 356px;
+
+    }
+
+    #imgCalpe {
+
+        position: absolute;
+        width: 526px;
+        height: 356px;
+        left: 690px;
+        top: 157px;
+
+    }
+
+    #imgCalpe:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    #imgToledo {
+
+        position: absolute;
+        width: 526px;
+        height: 356px;
+        left: 1231px;
+        top: 157px;
+    }
+
+    #imgToledo:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    #imgSalamanca {
+
+        position: absolute;
+        width: 526px;
+        height: 356px;
+        left: 149px;
+        top: 572px;
+        mix-blend-mode: darken;
+
+    }
+
+    #imgSalamanca:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    #imgAlmeria {
+        position: absolute;
+        width: 526px;
+        height: 356px;
+        left: 690px;
+        top: 572px;
+
+    }
+
+    #imgAlmeria:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    #imgAndorra {
+
+
+        position: absolute;
+        width: 526px;
+        height: 356px;
+        left: 1231px;
+        top: 572px;
+    }
+
+    #imgAndorra:hover {
+        box-shadow: 0 10px 10px -0.10px rgb(0, 0, 0);
+    }
+
+    #sitiosViaje {
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    /*contactos de sitios*/
+
+    .contactosVHijo {
+        position: absolute;
+        bottom: 0;
+        left: 49%;
+        text-align: center;
+    }
+
+    /*maleta*/
+    #headerMaleta {
+        text-align: center;
+    }
+
+
+    #maletaContacto {
+        text-align: center;
+    }
+
+    /*imagenes página de Madrid*/
+    @keyframes pulse {
+        0% {
+            border: 2px solid #000;
+        }
+
+        50% {
+            border: 2px solid #f00;
+        }
+
+        100% {
+            border: 2px solid #000;
+        }
+
+    }
+
+    .imgsMadrid img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid #000;
+        animation: pulse 2s infinite;
+    }
+
+    .imgsMadrid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: auto;
+    }
+
+    .imgsMadridAparte {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: auto;
+    }
+
+    .imgsMadridAparte img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid #000;
+        animation: pulse 2s infinite;
+    }
+
+    .pagMadrid {
+        text-align: center;
+    }
+
+    .madridTitulo {
+        text-align: center;
+    }
+
+    /*imágenes pagina de Calpe*/
+
+    .imgsCalpe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: auto;
+        animation: pulse 2s infinite;
+    }
+
+    /*imágenes toledo*/
+    .toledoImgs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: auto;
+        animation: pulse 2s infinite;
+    }
+
+    /*imágenes salamanca*/
+    .salamancaImgs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: auto;
+        animation: pulse 2s infinite;
+    }
+
+    .almeriaImgs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: auto;
+        animation: pulse 2s infinite;
+    }
+
+    .andorraImgs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: auto;
+        animation: pulse 2s infinite;
+    }
+
+}
