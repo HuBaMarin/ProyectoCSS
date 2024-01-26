@@ -82,7 +82,7 @@
     div.divNav {
         display: flex;
         position: absolute;
-        left: 44%;
+        left: 26%;
         box-sizing: border-box;
 
     }
@@ -152,7 +152,7 @@
 
     #imgSalamanca {
         position: absolute;
-        width: 60%;
+        width: 97%;
         height: auto;
         top: 119%;  
     }
@@ -170,28 +170,28 @@
 
     #h3Almeria{
         position: absolute;
-        top: 139%;
+        top: 151%;
         height: auto;
         width: 60%;
     }
     #imgAlmeria{
         position: absolute;
-        top: 146%;
+        top: 160%;
         height: auto;
-        width: 60%;
+        width: 95%;
 
     }
 
     #h3Andorra{
         position: absolute;
-        top: 161%;
+        top: 182%;
         width: 60%;
         height: auto;
     }
     #imgAndorra{
         position: absolute;
-        top: 168%;
-        width: 60%;
+        top: 189%;
+        width: 93%;
         height: auto;   
 
     }
@@ -200,8 +200,143 @@
         position: absolute;
         width: 60%;
         height: auto;
-        top: 190%;
+        top: 218%;
+        left: 26%;
     }
+
+    .maleta section{
+        display: flex;
+        margin-top: 15%;
+    }
+
+    .im >section>img{
+        width: 96%;
+        height: auto;
+    }
+
+    .divLinks {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+
+    @keyframes botonsi {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    /* SI */
+
+    a#si {
+
+        
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 24px;
+    top: 302px;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+
+    }
+
+    a#si::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 157, 2, 1) 0%, rgba(255, 0, 0, 1) 34%, rgba(62, 226, 82, 1) 59%, rgba(62, 226, 217, 1) 100%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 20s infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+
+    a#si:hover::before {
+        opacity: 1;
+    }
+
+
+    /* NO */
+
+    a#no {
+
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 50px;
+        left: 88px;
+        top: 304px;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        background: #000000;
+        color: #fff;
+        border-radius: 10px;
+        /*farle forma link*/
+
+    }
+
+    a#no::before {
+        position: absolute;
+        content: "";
+        /*fondo*/
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        /*posicionar*/
+        left: -2px;
+        top: -2px;
+        /*colores*/
+        background: radial-gradient(circle, rgba(255, 2, 2, 1) 0%, rgb(255, 195, 0) 10%, rgb(255, 78, 0) 17%, rgb(246, 0, 234) 30%, rgba(0, 255, 224, 1) 50%, rgba(62, 163, 226, 1) 59%, rgba(196, 86, 237, 1) 69%);
+
+        background-size: 400%;
+        /*detrás del enlace*/
+        z-index: -1;
+        filter: blur(5px);
+        /*animación*/
+        animation: botonsi 15s infinite;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+
+    }
+    a#no:hover::before {
+        opacity: 1;
+    }
+    
+
+    
 }
 
 
