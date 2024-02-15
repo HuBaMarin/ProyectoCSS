@@ -1,20 +1,60 @@
 @font-face {
-    font-family: "Work Sans";
-    src: url("ARCHIVOS_PROJ/Work_Sans/static/WorkSans-Regular.ttf");
+    font-family: "WorkSans";
+    src: url("Work_Sans/static/WorkSans-Regular.ttf");
 }
 
-@media only screen and (max-width: 360px)
-/*and (max-width: 800px)*/
-    {
+* {
+    font-family: "WorkSans", sans-serif;
+}
+
+@media only screen and (max-width: 360px) {
+
+
+    tbody {
+        display: block;
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    thead,
+    tbody tr {
+        display: table;
+        width: 100%;
+
+    }
+
+    thead {
+        width: 100%;
+    }
+
+    table {
+        width: 200px;
+    }
+
+    td:nth-child(1) {
+        width: 10%
+    }
+
+    td:nth-child(2) {
+        width: 30%
+    }
 
     .contenedorImgNo {
         position: absolute;
-        top: 33%;
         right: 4%;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20vw;
+    }
+
+    .contenedorImgNo > img {
+        width: 100vh;
+        top: 38vh;
+        right: 50%;
+        transform: translateX(-30%);
+        position: relative;
+        object-fit: cover;
     }
 
     .imgsCalpe {
@@ -39,14 +79,27 @@
     }
 
     #HM {
-        /*max-width: 30%;*/
-        width: 300px;
-        height: auto;
+        position: relative;
+        width: 33vh;
+        right: 5vh;
+        top: 50vh;
     }
 
     p#texto1No {
-        width: 50vw;
-        top: 10%;
+        width: 80vw;
+        top: 8%;
+        text-align: justify;
+        word-break: break-word;
+        font-size: medium;
+    }
+
+    p#texto2No {
+        position: relative;
+        width: 90vw;
+        word-break: break-word;
+        top: 75vh;
+        text-align: justify;
+        font-size: medium;
     }
 
     h1#noTitulo {
@@ -55,24 +108,29 @@
     }
 
     ul#lista {
-        position: absolute;
-        top: 80%;
+        position: relative;
+        top: 80vh;
+        left: 40%;
+        transform: translateX(-50%);
+        width: 80vw;
+        text-align: justify;
+        font-size: medium;
 
     }
 
-    ul#lista>li {
-        font-size: small;
+    ul#lista > li {
+        font-size: large;
     }
 
-    ul#lista>li>p {
+    ul#lista > li > p {
         overflow-wrap: break-word;
-        font-size: small;
+        font-size: medium;
     }
 
     #footerNo {
-        position: absolute;
-        top: 161%;
-        left: 21%;
+        position: relative;
+        top: 75vh;
+        font-size: large;
         text-align: center;
     }
 
@@ -91,29 +149,30 @@
     }
 
     #texto3No {
-        font-size: small;
-        overflow-wrap: break-word;
-        position: absolute;
-        top: 147%;
-
+        font-size: medium;
+        word-break: break-word;
+        position: relative;
+        top: 80vh;
+        text-align: justify;
+        width: 30vh;
     }
 
-    #que_nos_aporta>h3 {
-        position: absolute;
-        font-size: small;
-        top: 75%;
-        left: 30%;
+    #que_nos_aporta > h3 {
+        position: relative;
+        top: 75vh;
+        text-align: center;
+
     }
 
     header #noTitulo {
-        font-size: small;
+        font-size: larger;
     }
 
 
     div.divNav {
         display: flex;
         position: absolute;
-        left: 24%;
+        left: 5%;
         top: 2vh;
         box-sizing: border-box;
 
@@ -133,7 +192,6 @@
     }
 
 
-
     div.divNav a:hover::before {
         opacity: 1;
     }
@@ -144,9 +202,7 @@
 
 
     /*imagenes */
-
     /*madrid*/
-
     #h3Madrid {
         position: absolute;
         top: 6%;
@@ -164,7 +220,6 @@
     #h3Calpe {
         position: absolute;
         top: 40%;
-        left: 5%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -201,6 +256,49 @@
         top: 119%;
     }
 
+    #volver {
+
+        position: absolute;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        border-radius: 20%;
+    }
+
+    #volver:hover {
+        animation: efecto 2s infinite;
+        border-radius: 80%;
+    }
+
+    @keyframes efecto {
+
+        0% {
+            border: 4px solid #034732;
+            border-radius: 22%;
+        }
+
+        25% {
+            border: 4px solid #008148;
+            border-radius: 22%;
+        }
+
+        50% {
+            border: 4px solid #C6C013;
+            border-radius: 22%;
+        }
+
+        75% {
+            border: 4px solid #EF8A17;
+            border-radius: 22%;
+        }
+
+        100% {
+            border: 4px solid #EF2917;
+            border-radius: 22%;
+        }
+
+    }
 
     #imgToledo {
 
@@ -225,7 +323,7 @@
         top: 160%;
         height: auto;
         width: 90%;
-
+        left: 5%;
     }
 
     #headerMaleta {
@@ -253,7 +351,19 @@
         top: 189%;
         width: 90%;
         height: auto;
+        left: 5%;
+    }
 
+    .andorraImgs {
+        position: relative;
+        width: 100%;
+
+    }
+
+    .headerAndorra {
+        position: relative;
+        top: 5vh;
+        text-align: center;
     }
 
     .mainMadrid section article p {
@@ -279,8 +389,20 @@
 
     #sitiosViaje p {
         position: relative;
-        top: -29vh;
         text-align: justify;
+        top: -26vh;
+    }
+
+    .contenedorImgsMaleta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .elementosImgs {
+        flex-grow: 1;
+        padding: 10px;
     }
 
     .headerCalpe {
@@ -300,20 +422,24 @@
         text-align: center;
     }
 
-    .headerSalamanca{
+    .headerSalamanca {
         position: relative;
         top: 4vh;
         left: 11vh;
     }
-    .tituloSalamanca{
+
+    .tituloSalamanca {
         text-align: center;
     }
-    .salamancaImgs{
+
+    .salamancaImgs {
         width: 100%;
     }
-    .txtSalamanca{
+
+    .txtSalamanca {
         text-align: justify;
     }
+
     .toledoImgs {
         width: 100%;
     }
@@ -342,7 +468,7 @@
         margin-top: 15%;
     }
 
-    .im>section>img {
+    .im > section > img {
         width: 96%;
         height: auto;
     }
@@ -370,7 +496,6 @@
     }
 
     /* SI */
-
     a#si {
 
 
@@ -420,7 +545,6 @@
 
 
     /* NO */
-
     a#no {
 
         text-align: center;
@@ -436,7 +560,7 @@
         background: #000000;
         color: #fff;
         border-radius: 10px;
-        /*farle forma link*/
+        /*darle forma link*/
 
     }
 
@@ -487,11 +611,28 @@
 }
 
 
-* {
-    font-family: "Work_Sans", sans-serif;
-}
-
 @media only screen and (max-width: 1920px) and (min-width: 1080px) {
+    .contenedorImgsMaleta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerToledo {
+        position: relative;
+        text-align: center;
+
+    }
+    #HM {
+        position: relative;
+        bottom: 5vh;
+    }
+
+    .elementosImgs {
+        flex-grow: 1;
+        padding: 10px;
+    }
 
     body {
         padding: 25px;
@@ -528,13 +669,13 @@
     #tituloViaje {
         color: #fff;
         text-shadow: 0 0 7px #000000,
-            0 0 10px #4e4545,
-            0 0 21px #261f1f,
-            0 0 42px #1a1f1e,
-            0 0 82px #151817,
-            0 0 92px #111313,
-            0 0 102px #090a0a,
-            0 0 151px #020202;
+        0 0 10px #4e4545,
+        0 0 21px #261f1f,
+        0 0 42px #1a1f1e,
+        0 0 82px #151817,
+        0 0 92px #111313,
+        0 0 102px #090a0a,
+        0 0 151px #020202;
 
         position: absolute;
         width: 156px;
@@ -563,7 +704,6 @@
 
 
     /* SI */
-
     a#si {
 
         text-align: center;
@@ -613,7 +753,6 @@
 
 
     /* NO */
-
     a#no {
 
         text-align: center;
@@ -684,15 +823,6 @@
         background: #FFFFFF;
     }
 
-    @keyframes glow {
-        0% {
-            text-shadow: 0 0 10px #f10000, 0 0 20px #e74242, 0 0 30px #d5237c, 0 0 40px #3200e6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-        }
-
-        100% {
-            text-shadow: 0 0 20px #0049e6, 0 0 30px #4dfff0, 0 0 40px #2ad35a, 0 0 50px #05ee12, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-        }
-    }
 
     /*enlace volver*/
     a#volver {
@@ -742,7 +872,7 @@
     p#texto1No {
         position: absolute;
         top: 10vh;
-        font-size: 15px;
+        font-size: medium;
         text-align: justify;
         display: flex;
         flex-direction: column;
@@ -754,7 +884,7 @@
     #texto2No {
         position: absolute;
         top: 57%;
-        font-size: 15px;
+        font-size: medium;
         text-align: justify;
         display: flex;
         flex-direction: column;
@@ -764,7 +894,7 @@
 
 
     /* ¿Qué nos aporta viajar? */
-    article#que_nos_aporta>h3 {
+    article#que_nos_aporta > h3 {
         position: absolute;
         top: 70%;
         left: 50%;
@@ -784,10 +914,10 @@
         width: 1547px;
         height: 300px;
         left: 37px;
-        top: 77%;
+        top: 77vh;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: medium;
         line-height: 17px;
         text-align: justify;
 
@@ -800,8 +930,8 @@
     p#texto3No {
 
         position: absolute;
-        top: 113vh;
-        font-size: 15px;
+        bottom: -30vh;
+        font-size: medium;
         color: #000000;
         word-break: break-word;
         display: flex;
@@ -814,11 +944,25 @@
     div.divNav {
         display: flex;
         position: absolute;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
         box-sizing: border-box;
 
     }
+    .maleta table{
+        position: relative;
+        top: 10vh;
+    }
+    .maleta article{
+        position: relative;
+        top: 10vh;
+    }
 
+    .contenedorImgsMaleta {
+        position: relative;
+        top: 10vh;
+        left: 15%;
+    }
     div.divNav a {
         text-align: center;
         text-decoration: none;
@@ -831,7 +975,6 @@
         color: #000000;
         border-radius: 10px;
     }
-
 
 
     div.divNav a:hover::before {
@@ -853,7 +996,7 @@
 
     #footerNo {
         position: absolute;
-        top: 120vh;
+        top: 130vh;
         text-align: center;
         left: 50%;
         transform: translateX(-50%);
@@ -861,7 +1004,6 @@
     }
 
     /*Viajes*/
-
     #viajes {
 
         position: relative;
@@ -873,7 +1015,7 @@
     }
 
 
-    #viajesHeader>h1 {
+    #viajesHeader > h1 {
         position: absolute;
         width: 43px;
         height: 18px;
@@ -889,7 +1031,7 @@
 
     }
 
-    #viajesNav>div {
+    #viajesNav > div {
         position: absolute;
         width: 48px;
         height: 18px;
@@ -935,9 +1077,7 @@
     }
 
     /*sitios de viaje*/
-
     /*madrid calpe toledo salamanca almeria andorra */
-
     /*Títulos*/
     #h3Madrid {
 
@@ -1125,7 +1265,6 @@
     }
 
     /*contactos de sitios*/
-
     .contactosVHijo {
         position: absolute;
         bottom: 0;
@@ -1141,6 +1280,8 @@
 
     #maletaContacto {
         text-align: center;
+        position: relative;
+        top: 15vh;
     }
 
     /*imagenes página de Madrid*/
@@ -1163,7 +1304,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 100%;
         border: 2px solid #000;
         animation: pulse 2s infinite;
     }
@@ -1180,19 +1321,37 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
         height: auto;
+        max-width: 60%;
     }
 
     .imgsMadridAparte img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
         border: 2px solid #000;
         animation: pulse 2s infinite;
+        position: relative;
+        max-width: 100%;
     }
 
+    #sitiosViaje p{
+        text-align: justify;
+        word-wrap: break-word;
+        position: relative;
+        bottom: 50vh;
+    }
+    .andorraFooter {
+        position: relative;
+        text-align: center;
+
+    }
+    .imgsCalpe {
+        position: relative;
+        top: 20vh;
+    }
+    .footerCalpe {
+        position: relative;
+        text-align: center;
+        top: 20vh;
+    }
     .pagMadrid {
         text-align: center;
     }
@@ -1202,7 +1361,6 @@
     }
 
     /*imágenes pagina de Calpe*/
-
     .imgsCalpe {
         display: block;
         margin-left: auto;
@@ -1217,7 +1375,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 50%;
         height: auto;
         animation: pulse 2s infinite;
     }
@@ -1227,16 +1385,20 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 50%;
         height: auto;
         animation: pulse 2s infinite;
     }
 
+    .footerSalamanca {
+        position: relative;
+        text-align: center;
+    }
     .almeriaImgs {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 50%;
         height: auto;
         animation: pulse 2s infinite;
     }
@@ -1245,9 +1407,14 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 50%;
         height: auto;
         animation: pulse 2s infinite;
+    }
+
+    .almeriaFooter {
+        position: relative;
+        text-align: center;
     }
 
 }
